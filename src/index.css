@@ -1,0 +1,251 @@
+/* ========== Reset & Fonts ========== */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== Banner Section ========== */
+.bannerSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerSmall {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerImage,
+.bannerImageSmall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+/* ========== Overlay Content ========== */
+.overlayContent {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  width: 90%;
+  max-width: 600px;
+}
+
+.overlayContent h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* ========== Search Bar ========== */
+.searchBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.searchBar input {
+  width: 300px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+}
+.searchBar button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: orange;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.searchBar button:hover {
+  background-color: darkorange;
+}
+.msg {
+  margin-top: 10px;
+  color: #ffcccb;
+  font-weight: 500;
+}
+
+/* ========== Meal Cards ========== */
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 44px;
+}
+.mealImg {
+  width: 280px;
+  height: 380px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.mealImg:hover {
+  transform: scale(1.03);
+}
+.mealImg img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+.mealImg p {
+  font-weight: 600;
+  margin-top: 10px;
+}
+.mealImg button {
+  width: 120px;
+  background-color: orange;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 21px;
+  padding: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.mealImg button:hover {
+  background-color: darkorange;
+}
+
+/* ========== Meal Detail Page ========== */
+.mealInfo {
+  background-color: #fffaf0;
+  color: #333;
+  min-height: 100vh;
+  padding: 32px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.mealInfo img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.mealInfo .info {
+  max-width: 600px;
+  padding: 10px;
+}
+.mealInfo h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.mealInfo h3 {
+  font-size: 22px;
+  color: #ff6347;
+  margin-top: 15px;
+}
+.mealInfo p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+.mealInfo button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.mealInfo button:hover {
+  background-color: #e74c3c;
+}
+
+/* ========== YouTube Button ========== */
+.ytbtn {
+  background-color: #c4302b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.ytbtn a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.ytbtn:hover {
+  background-color: #a72c28;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .bannerSection {
+    height: 90vh;
+  }
+  .bannerSmall {
+    height: 200px;
+  }
+  .overlayContent h1 {
+    font-size: 30px;
+  }
+  .searchBar input {
+    width: 90%;
+  }
+  .searchBar button {
+    width: 90%;
+  }
+  .mealImg {
+    width: 90%;
+    height: auto;
+  }
+  .mealInfo {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .mealInfo img {
+    max-width: 90%;
+  }
+  .mealInfo .info {
+    padding: 0 10px;
+  }
+  .mealInfo button,
+  .ytbtn {
+    width: 90%;
+    font-size: 16px;
+  }
+}
