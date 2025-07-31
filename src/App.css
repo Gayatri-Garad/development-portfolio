@@ -1,0 +1,22 @@
+
+.slick-prev, .slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+ 
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  color: rgb(63, 16, 214);
+}
+
+.slick-prev {
+  left: -50px !important; 
+}
+
+.slick-next {
+  right: -100px !important; /
+}
