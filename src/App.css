@@ -1,5 +1,5 @@
 
-.slick-prev, .slick-next {
+/* .slick-prev, .slick-next {
   z-index: 10;
   width: 40px;
   height: 40px;
@@ -19,4 +19,10 @@
 
 .slick-next {
   right: -100px !important; /
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
 }
