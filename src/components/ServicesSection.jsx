@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-import googleServiseImage from "../assets/google_servise.png";
+import googleServiseImage from "../assets/google_Servise.png";
 import keywordServiseImage from "../assets/servise2_keyword.png";
 import postingServiseImage from "../assets/service3_postingandScheduling.png";
 import reviewServiseImage from "../assets/service4_reviewMangement.png";
