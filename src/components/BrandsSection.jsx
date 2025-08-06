@@ -51,7 +51,7 @@ const BrandsSection = () => {
   ];
 
   return (
-    <Box sx={{ textAlign: "center", py: 6 }}>
+    <Box sx={{ textAlign: "center", py: 6, px: 2 }}>
       <Typography
         variant="subtitle2"
         sx={{
@@ -83,7 +83,7 @@ const BrandsSection = () => {
         sx={{
           mt: 1,
           marginBottom: "24px",
-          width: "70%",
+          width: { xs: "100%", sm: "90%", md: "70%" },
           fontFamily: "'Poppins', sans-serif",
           fontSize: "1.2rem",
           color: "#000000",
@@ -104,11 +104,11 @@ const BrandsSection = () => {
             sm: "repeat(2, 1fr)",
             md: "repeat(3, 1fr)",
           },
-          gap: 3,
+          gap: 2,
           justifyContent: "center",
           maxWidth: "900px",
           margin: "0 auto",
-          marginTop: "24px",
+          mt: 3,
         }}
       >
         {categories.map((item) => (
@@ -126,7 +126,7 @@ const BrandsSection = () => {
               borderColor: active === item ? "#6f3fc8" : "#ccc",
               "&:hover": {
                 backgroundColor: active === item ? "#5724E1" : "#f5f5f5",
-                boxShadow: " 0 4px 12px rgba(44, 7, 252, 1)",
+                boxShadow: "0 4px 12px rgba(44, 7, 252, 0.2)",
               },
             }}
           >
@@ -139,12 +139,13 @@ const BrandsSection = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          gap: 3,
+          gap: { xs: 2, sm: 3 },
           justifyContent: "center",
-          marginTop: 4,
-          width: "1250px",
-          margin: "0 auto",
-          padding: "25px",
+          mt: 4,
+          width: "100%",
+          maxWidth: "1250px",
+          mx: "auto",
+          px: 2,
         }}
       >
         {imageData[active]?.map((url, idx) => (
@@ -152,8 +153,12 @@ const BrandsSection = () => {
             key={idx}
             component="img"
             src={url}
-            alt={active + " brand logo"}
-            sx={{ width: 220, height: "auto" }}
+            alt={`${active} brand logo`}
+            sx={{
+              width: { xs: "100px", sm: "150px", md: "180px", lg: "200px" },
+              height: "auto",
+              objectFit: "contain",
+            }}
           />
         ))}
       </Box>

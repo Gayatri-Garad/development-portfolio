@@ -367,64 +367,6 @@ function Navbar() {
           <MenuIcon />
         </IconButton>
       </Toolbar>
-
-      {/* <Drawer
-        anchor="right"
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-      >
-        <Box sx={{ width: 250, px: 2, py: 4 }}>
-          <List>
-            <ListItem button>
-              <ListItemText primary="Home" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Pricing" />
-            </ListItem>
-            <Divider sx={{ my: 1 }} />
-            <Typography variant="subtitle2" sx={{ pl: 2, mb: 1 }}>
-              Tools
-            </Typography>
-            <ListItem button>
-              <ListItemText primary="Local Keywords Finder" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="AI Content Generation" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Local Heat Map" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Profile Protection" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Bing, ChatGPT Directories" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Competitors Tracker" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Profile Suspension Risk" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="AI Review Auto Reply" />
-            </ListItem>
-            <Divider sx={{ my: 2 }} />
-            <Button
-              variant="contained"
-              fullWidth
-              sx={{
-                backgroundColor: "#5724E1",
-                textTransform: "none",
-                fontWeight: "bold",
-                height: "40px",
-              }}
-            >
-              LOGIN
-            </Button>
-          </List>
-        </Box>
-      </Drawer> */}
     </AppBar>
   );
 }
