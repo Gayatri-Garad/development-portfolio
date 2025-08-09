@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  color: #333;
+}
+/* heder css */
+.logo-img{
+  padding-left: 45px;
+  width: 150px;
+  
+  background-color: white;
+  background-image: none;
+}
+
+.MuiAppBar-root {
+  background-color: white !important;
+  color: black !important;
+}
