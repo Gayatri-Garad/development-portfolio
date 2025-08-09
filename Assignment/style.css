@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  padding: 30px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF6B82;
+  font-weight: 600;
+  font-size: 18px;
+  
+  font-family: 'Inter', sans-serif;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+ 
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  border: 1px solid #ddd;
+  border: none;
+  padding: 20px;
+  background: #fff;
+}
+
+
+.box {
+  border: 1.5px solid #ccc;
+  /* width:314px;
+  height: 363px;
+ top: 82px;
+ left: 59px; */
+  padding: 12px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.box.active {
+  background-color: #FFF9FA;
+}
+
+.box.pink-border {
+  border-color: #FF6B82;
+}
+.new-price{
+  padding-top: 10px;
+  width: 82px;
+  height: 18px;
+  top: 104px;
+  left: 293px;
+  font-style: medium;
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.old-price{
+  padding-top: 7px;
+  opacity: 30%;
+  width: 82px;
+  height: 18px;
+  top: 104px;
+  left: 293px;
+
+
+}
+
+.standerd-Price{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  
+  letter-spacing: 0%;
+
+
+letter-spacing: 0%;
+color: rgba(0,0,0,1);
+
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0,0,0,1);
+  font-weight: 400;
+  
+  padding-left: 30px;
+  padding-bottom:30px;
+
+  
+}
+
+
+.unit-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  gap: 6px;
+}
+
+.radio input[type="radio"] {
+  appearance: none;
+  width: 14.46px;
+  height: 14.46px;
+  border: 0.9px solid #DADADA;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.radio input[type="radio"]:checked::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #FF6B82;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.unit2-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.discount-tag {
+  background:#FF6B82;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.most-popular {
+  position: absolute;
+  top: -11px;
+  right: -1px;
+  background:#FF6B82;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.price-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.new-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.old-price {
+  font-size: 12px;
+  font-weight: 400;
+  color: #B0B0B0;
+  text-decoration: line-through;
+}
+
+.dropdowns {
+  margin-top: 10px;
+}
+
+.pair-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  margin-left: 28px;
+}
+
+.pair-row select {
+  padding: 6px;
+  font-size: 13px;
+}
+
+.footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  color:#FF6B82;
+  font-size: 14px;
+  font-weight: 500;
+}
+.free-shipping {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+#total-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.button {
+  margin-top: 15px;
+  width: 100%;
+
+  background: #FF6B82;
+  color: white;
+gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  flex-flow: horizontal;
+  /* width: 342px; */
+  height: 40px;
+  top: 497px;
+  left: 58px;
+  border: none;
+  padding: 10px;
+}
+
+
+.powered {
+  margin-top: 8px;
+  text-align: right;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color:rgba(0,0,0,0.4)
+}

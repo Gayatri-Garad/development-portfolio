@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YAY! It's BOGO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="divider">
+  <span class="h2">YAY! It's BOGO</span>
+</div>
+
+    
+    <div class="box">
+      <div class="unit-price-row">
+        <div class="radio">
+          <input type="radio" name="unit" onclick="selectPlan(1, 10)">
+          <span class="unit2-text">1 Unit</span>
+          <span class="discount-tag">10% Off</span>
+         
+         
+        </div>
+      
+        <div class="price-right">
+          <div class="new-price">$10.00 USD</div>
+          <div class="old-price">$24.00 USD</div>
+        </div>
+      </div>
+        <div class="standerd-Price">Standard price</div>
+      <div class="dropdowns" id="dropdowns-1" style="display: none;">
+        <div class="pair-row">
+          <span>#1</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Grey</option></select>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="box pink-border" id="box-2">
+      <div class="most-popular">MOST POPULAR</div>
+      <div class="unit-price-row">
+        <div class="radio">
+          <input type="radio" name="unit" onclick="selectPlan(2, 18)">
+          <span class="unit2-text">2 Unit</span>
+          <span class="discount-tag">20% Off</span>
+        </div>
+        <div class="price-right">
+          <div class="new-price">$18.00 USD</div>
+          <div class="old-price">$24.00 USD</div>
+        </div>
+      </div>
+      <div class="dropdowns" id="dropdowns-2" style="display: none;">
+        <div class="pair-row">
+          <span>#1</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Grey</option></select>
+        </div>
+        <div class="pair-row">
+          <span>#2</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Grey</option></select>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="box">
+      <div class="unit-price-row">
+        <div class="radio">
+          <input type="radio" name="unit" onclick="selectPlan(3, 24)">
+          <span class="unit2-text">3 Unit</span>
+          <span class="discount-tag">30% Off</span>
+        </div>
+        <div class="price-right">
+          <div class="new-price">$24.00 USD</div>
+          <div class="old-price">$24.00 USD</div>
+        </div>
+      </div>
+      <div class="dropdowns" id="dropdowns-3" style="display: none;">
+        <div class="pair-row">
+          <span>#1</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Grey</option></select>
+        </div>
+        <div class="pair-row">
+          <span>#2</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Grey</option></select>
+        </div>
+        <div class="pair-row">
+          <span>#3</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Grey</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="free-shipping">Free Delivery</span>
+      <span id="total-text">Total : $0.00 USD</span>
+    </div>
+
+    <button class="button">+ Add to Cart</button>
+
+    <div class="powered">@ Powered  by Pumper</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
