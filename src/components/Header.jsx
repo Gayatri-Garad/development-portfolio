@@ -28,7 +28,6 @@ const Header = () => {
   console.log(location);
 
   useEffect(() => {
-    //o x y
     const timeOutRef = setTimeout(() => {
       fetchDataFromServer();
     }, 500);
@@ -87,8 +86,8 @@ const Header = () => {
               <NavLink to="home" style={{ textDecoration: "none" }}>
                 <img
                   className="logo-img"
-                  src="\src\assets\MediZen_Logos.png"
-                  alt="mediZenLogo"
+                  src="src\assets\MediZen_Logos.png"
+                  alt="MediZen "
                 />
               </NavLink>
                  
