@@ -1,0 +1,30 @@
+{
+  "applications": [
+    {
+      "id": "c855",
+      "name": "sam",
+      "email": "akjslsj@gmail.com",
+      "amount": "40",
+      "type": "Home",
+      "status": "Pending"
+    },
+    {
+      "id": "00cc",
+      "name": "sam",
+      "email": "akjslsj@gmail.com",
+      "amount": "34",
+      "type": "Home",
+      "status": "Pending"
+    },
+    {
+      "id": "3edb",
+      "name": "vfaxcc",
+      "email": "eeeeeeewdzc@gmail.com",
+      "amount": "100",
+      "type": "Home",
+      "duration": 12,
+      "interest": 10,
+      "status": "Pending"
+    }
+  ]
+}
