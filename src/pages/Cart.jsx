@@ -19,7 +19,8 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddressModal from "../components/AddressModal";
-import BillBreakDown from "../components/billBreakdown";
+import BillBreakdown from "../components/BillBreakdown";
+
 import { Add } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
@@ -164,7 +165,7 @@ const Cart = () => {
           </Modal>
 
           {/* Bill Breakdown */}
-          <BillBreakDown></BillBreakDown>
+          <BillBreakdown></BillBreakdown>
 
           <Button fullWidth variant="contained" sx={{ mt: 2 }}>
             <NavLink to="/patient-details"> Checkout</NavLink>

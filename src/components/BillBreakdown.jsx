@@ -2,7 +2,7 @@ import { Box, Card, Divider, Typography } from "@mui/material";
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
-const BillBreakDown = () => {
+const BillBreakdown = () => {
   const { order } = useContext(CartContext);
 
   return (
@@ -34,4 +34,4 @@ const BillBreakDown = () => {
   );
 };
 
-export default BillBreakDown;
+export default BillBreakdown;
