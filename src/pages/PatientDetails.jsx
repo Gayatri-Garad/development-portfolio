@@ -15,7 +15,7 @@ import React, { useContext, useEffect } from "react";
 import AddPatientDetails from "../components/AddPatientDetails";
 import { useState } from "react";
 import { Add } from "@mui/icons-material";
-import BillBreakDown from "../components/billBreakdown";
+import BillBreakdown from "../components/BillBreakdown";
 import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
 
@@ -89,7 +89,7 @@ const PatientDetails = () => {
             </Grid>
           </Grid>
           <Grid size={{ xs: 6, md: 4 }}>
-            <BillBreakDown></BillBreakDown>
+            <BillBreakdown></BillBreakdown>
           </Grid>
         </Grid>
 
