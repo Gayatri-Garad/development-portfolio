@@ -1,0 +1,61 @@
+[
+  
+  {
+    "key": 1,
+    "title": "RightChoice-ai",
+    "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9iJ6g7pGjbmL-QZ3-h19NkLDXIl4Ed8WgPA&s",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://web-rightchoice-ai.netlify.app/",
+    "source": "https://github.com/Gayatri-Garad/development-portfolio/tree/rightchoice.ai"
+  },
+  {
+    "key": 2,
+    "title": "Medizen Project",
+    "imageSrc": "https://dutchuncles.in/wp-content/uploads/2021/03/Medibuddy-app-feature-01.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://medizenproject.netlify.app/",
+    "source": "https://github.com/Gayatri-Garad/development-portfolio/tree/medizen"
+  },
+  {
+    "key": 3,
+    "title": "Add to Cart",
+    "imageSrc": "https://cdn.shopify.com/app-store/listing_images/77b2052c830e08a10296b35910584ec0/desktop_screenshot/CL7isYXHo_sCEAE=.jpeg?height=720&quality=90&width=1280",
+    "description": "This is a project made with complete HTML ,CSS, Javascript.",
+    "demo": "https://iridescent-moonbeam-4d55fa.netlify.app/",
+    "source": "https://github.com/Gayatri-Garad/development-portfolio/tree/addtocart"
+  },
+  {
+    "key": 4,
+    "title": "Grousary Data App",
+    "imageSrc": "https://theacsi.org/wp-content/uploads/2022/01/acsi-supermarket-industry-scaled.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://grousarydata-fetch.netlify.app/",
+    "source": "https://github.com/Gayatri-Garad/development-portfolio/tree/grousarydata#"
+  },{
+    "key": 5,
+    "title": "Loan Application Dashboard",
+    "imageSrc": "https://www.slideteam.net/media/catalog/product/cache/330x186/m/e/metric_dashboard_for_loan_fund_portfolio_analysis_ppt_show_example_introduction_slide01.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://loan-application-dashboard.netlify.app/",
+    "source": "https://github.com/Gayatri-Garad/development-portfolio/tree/loanDashboard"
+  },
+    
+  {
+    "key": 6,
+    "title": "Amazon Clone",
+    "imageSrc": "https://img.freepik.com/premium-photo/3d-render-amazon-logo-embossed-clear-liquid-like-resin-tilted-slightly-30-degree-angle-neo_1020495-783059.jpg?semt=ais_hybrid&w=740&q=80",
+    "description": "This is a project made with complete HTML ,CSS.",
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Gayatri-Garad/development-portfolio/tree/amzon"
+  },
+  
+  { "key": 7,
+    "title": "Food-Recipe-Website",
+    "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH_kfmkik-nf3NMfDE0fLb9o0K49vDoO5Qug&s",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://foods-recipe-website.netlify.app/",
+    "source": "https://github.com/Gayatri-Garad/development-portfolio/tree/food-website"
+  }
+
+]
+

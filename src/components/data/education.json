@@ -1,0 +1,31 @@
+[
+  {
+    "id":1,
+    "school":" Secondary School ,S.R Girl's Sevasadan Solapur",
+    "passOutYear":2019,
+    "marks":"70%",
+     "imageSrc": "education/sevasadan-site-logo.png"
+    
+  },
+  {
+    "id":2,
+    "school":"Intermediate, New high school and junior college,Solapur",
+    "passOutYear":2021,
+    "marks":"84%",
+     "imageSrc": "education/Intermediate.png"
+    
+
+    
+  },
+    {
+    "id":2,
+    "school":"Bachelor of Computer Application, Chandigarh University",
+    "passOutYear":2024,
+    "marks":"7.07 CGPA",
+      "imageSrc": "education/CU.png"
+    
+
+    
+  }
+  
+]

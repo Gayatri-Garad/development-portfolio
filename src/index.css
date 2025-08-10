@@ -1,0 +1,274 @@
+
+
+
+
+
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+  --bg-color: rgb(40, 47, 97);
+}
+
+body {
+  background-color: rgb(11, 26, 51);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar Section */
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav_bar .nav_items {
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav_bar .nav_items:hover {
+  border-bottom: 3px solid yellow;
+}
+
+
+/* Home Section */
+
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .left {
+  background-color: var(--bg-color);
+  width: 620px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.home .right .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  /* height: 350px;
+  width: 350px; */
+}
+
+.home .right .img img {
+  height: 270px;
+  width: 270px;
+  border: 5px solid yellow;
+  border-radius: 100%;
+  animation-name: superman;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes superman {
+  0% {
+    border-color: blue;
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+
+  25% {
+    border-color: rgb(239, 244, 11);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+
+  50% {
+    border-color: rgb(12, 12, 199);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+
+  75% {
+    border-color: rgb(130, 217, 160);
+    box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+  }
+
+  100% {
+    border-color: rgb(50, 55, 205);
+    transform: translate(0, -0px);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+}
+
+/* Education */
+
+.ed {
+  width: 900px;
+}
+
+.ed-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin: 20px;
+  padding: 30px;
+  width: 700px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+/* Skills */
+
+.skills { 
+  width: 900px;
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 800px; */
+  margin: auto;
+  /* background-color: yellow; */
+}
+
+.skills .items .item {
+  width: calc(33.33%);
+  background-color: black;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.skills .items .item img {
+  width: 70px;
+}
+
+/* Contact */
+
+.contact-icon {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon .items {
+  background-color: black;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid yellow;
+}
+
+.contact-icon .items:hover {
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icon .items .icons {
+  font-size: 2rem;
+}
+
+
+/* Existing variables and default styles remain same */
+
+/* Navbar Responsive */
+@media (max-width: 768px) {
+  .nav_bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav_bar .nav_items {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Home Section Responsive */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .home .left {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .home .right .img img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .left {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  .home .right .img img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* Education Responsive */
+@media (max-width: 1024px) {
+  .ed {
+    width: 100%;
+  }
+  .ed-items {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Skills Responsive */
+@media (max-width: 1024px) {
+  .skills {
+    width: 100%;
+  }
+  .skills .items .item {
+    width: calc(50% - 40px); /* two per row */
+  }
+}
+@media (max-width: 600px) {
+  .skills .items .item {
+    width: 100%; /* one per row */
+  }
+}
+
+/* Contact Responsive */
+@media (max-width: 768px) {
+  .contact-icon {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+  }
+  .contact-icon .items {
+    height: 60px;
+    width: 60px;
+    margin: 8px;
+  }
+  .contact-icon .items .icons {
+    font-size: 1.5rem;
+  }
+}
