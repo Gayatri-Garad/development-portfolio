@@ -1,34 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
-  return (
-    <>
-      <div
-        className="container nav_bar"
-        data-aos="fade-down"
-        data-aos-duration="1000"
-      >
-        <div className="left nav_items">Portfolio</div>
-        <div className="right">
-          <a href="#home" className="nav_items">
-            Home
-          </a>
-          <a href="#projects" className="nav_items">
-            Projects
-          </a>
-          <a href="#skills" className="nav_items">
-            Skills
-          </a>
+  const [open, setOpen] = useState(false);
 
-          <a href="#education" className="nav_items">
-            Education
+  const links = [
+    { href: "#home", label: "Home" },
+    { href: "#experience", label: "Experience" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
+  ];
+
+  return (
+    <div className="nav_bar">
+      <div className="logo">gayatri.dev</div>
+      <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div className={`nav_links ${open ? "active" : ""}`}>
+        {links.map((link) => (
+          <a key={link.href} href={link.href} className="nav_items" onClick={() => setOpen(false)}>
+            {link.label}
           </a>
-          <a href="#contact" className="nav_items">
-            Contact
-          </a>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

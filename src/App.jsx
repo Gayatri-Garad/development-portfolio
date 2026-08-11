@@ -5,6 +5,8 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -18,12 +20,13 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Home />
-        <Projects />
-        <Skills />
-        <Education />
-
-        <Contact />
+<Experience />
+<Projects />
+<Skills />
+<Education />
+<Contact />
       </div>
+      <Footer />
     </>
   );
 };

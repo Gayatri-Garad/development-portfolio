@@ -1,62 +1,69 @@
-import React from "react";
-import project from "./data/projects.json";
+import React, { useState } from "react";
+import projects from "./data/projects.json";
 
 const Projects = () => {
+  const [tab, setTab] = useState("mobile");
+  const filtered = projects.filter((p) => p.category === tab);
+
   return (
-    <>
-      <div className="container projects my-3" id="projects">
-        <h1>PROJECTS</h1>
-        <div className="row d-flex justify-content-center align-content-center">
-          {project.map((data) => (
-            <>
-              <div
-                key={data.id}
-                className="my-4 col-sm-6 col-md-4 col-lg-3 mx-4"
-              >
-                <div
-                  className="card bg-dark text-light"
-                  style={{
-                    width: "18rem",
-                    border: "1px solid yellow",
-                    boxShadow: "5px 5px 10px 10px rgba(101, 175, 10, 0.5)",
-                  }}
-                  data-aos="flip-right"
-                  data-aos-duration="1000"
-                >
-                  <div className="img d-flex justify-content-center align-content-center p-3">
-                    <img
-                      src={data.imageSrc}
-                      className="card-img-top"
-                      alt="..."
-                      style={{
-                        width: "250px",
-                        height: "200px",
-                        border: "2px solid yellow",
-                        borderRadius: "10px",
-                      }}
-                    />
-                  </div>
-                  <div className="card-body text-center">
-                    <h5 className="card-title">{data.title}</h5>
-                    <p className="card-text">{data.description}</p>
-                    <a
-                      href={data.demo}
-                      target="_blanck"
-                      className="btn btn-primary mx-3"
-                    >
-                      Demo
-                    </a>
-                    <a href={data.source} className="btn btn-warning">
-                      Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </>
-          ))}
-        </div>
+    <section id="projects" data-aos="zoom-in" data-aos-duration="1000">
+      <div className="section-head">
+        <span className="section-num">03</span>
+        <h2 className="section-title-main">Projects</h2>
       </div>
-    </>
+      <div className="section-underline"></div>
+
+      <div className="proj-tabs">
+        <button
+          className={`proj-tab ${tab === "mobile" ? "active" : ""}`}
+          onClick={() => setTab("mobile")}
+        >
+          <svg className="icon" viewBox="0 0 24 24" style={{ width: 15, height: 15 }}>
+            <rect x="7" y="2" width="10" height="20" rx="2" />
+          </svg>
+          Mobile Apps
+        </button>
+        <button
+          className={`proj-tab ${tab === "web" ? "active" : ""}`}
+          onClick={() => setTab("web")}
+        >
+          <svg className="icon" viewBox="0 0 24 24" style={{ width: 15, height: 15 }}>
+            <circle cx="12" cy="12" r="9" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+          </svg>
+          Web Projects
+        </button>
+      </div>
+
+      <div className="projects-grid">
+        {filtered.map((data) => (
+          <div className="proj-card" key={data.key} data-aos="fade-up" data-aos-duration="800">
+            <div className="proj-img-wrap">
+              <img src={data.imageSrc} alt={data.title} className="proj-img" />
+            </div>
+            <div className="proj-name">{data.title}</div>
+            <div className="proj-desc">{data.description}</div>
+            <div className="proj-links">
+              {data.demo && (
+                <a href={data.demo} target="_blank" rel="noreferrer" className="proj-btn solid">
+                  Demo
+                </a>
+              )}
+              {data.source && (
+                <a href={data.source} target="_blank" rel="noreferrer" className="proj-btn">
+                  Code
+                </a>
+              )}
+            </div>
+          </div>
+        ))}
+        {filtered.length === 0 && (
+          <p style={{ color: "#8b92a5", fontSize: "0.85rem" }}>
+            No {tab} projects added yet.
+          </p>
+        )}
+      </div>
+    </section>
   );
 };
 
